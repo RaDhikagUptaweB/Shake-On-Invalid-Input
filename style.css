@@ -1,21 +1,26 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-body{
-    background-color: #f5f7ff;
-}
-section{
-    width: 100vmin;
+    font-family: "Poppins", sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  section {
     height: 100vh;
+    position: relative;
+  }
+  #section-1 {
+    background-color: #2d8df8;
+  }
+  a#scroll-btn {
     position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
+    height: 10em;
+    width: 6.25em;
+    border: 0.5em solid #ffffff;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 6.25em;
+    border-radius: 3em;
