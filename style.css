@@ -1,26 +1,57 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #01dd8f;
+}
+form {
+  width: min(90%, 25em);
+  background-color: #151729;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 5em 2em;
+  border-radius: 0.5em;
+}
+.error-message {
+  color: #ff3434;
+  visibility: hidden;
+}
+input,
+button {
+  display: block;
+  width: 100%;
+  padding: 1em;
+  outline: none;
+  border: none;
+  border-radius: 0.3em;
+}
+button {
+  background-color: #01dd8f;
+  margin-top: 1em;
+  cursor: pointer;
+}
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
   }
-  html {
-    scroll-behavior: smooth;
+  25% {
+    transform: translateX(-5px);
   }
-  section {
-    height: 100vh;
-    position: relative;
+  50% {
+    transform: translateX(5px);
   }
-  #section-1 {
-    background-color: #2d8df8;
+  75% {
+    transform: translateX(-5px);
   }
-  a#scroll-btn {
-    position: absolute;
-    height: 10em;
-    width: 6.25em;
-    border: 0.5em solid #ffffff;
-    margin: auto;
-    left: 0;
-    right: 0;
-    bottom: 6.25em;
-    border-radius: 3em;
+  100% {
+    transform: translateX(0);
+  }
+}
